@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task 2</title>
+</head>
+<body>
+    <script>
+      a = prompt('a', 0);
+      aInt = parseInt(a);
+      
+      b = prompt('b', 0);
+      bInt = parseInt(b);
+
+      c = prompt('c', 0);
+      cInt = parseInt(c);
+
+      document.write('Ввели a = ' + a + ', b = ' + b + ', c = ' + c + '.');
+      document.write('<br/>');
+      document.write('Сумма чисел: ' + (aInt + bInt + cInt));
+      document.write('<br/>');
+
+      if (a % 2 == 0) {
+        document.write('Четное "a" = ' + aInt);
+        document.write('<br/>');
+      }
+
+      if (b % 2 == 0) {
+        document.write('Четное "b" = ' + bInt);
+        document.write('<br/>');
+      }
+
+      if (c % 2 == 0) {
+        document.write('Четное "c" = ' + cInt);
+      }
+        
+    </script>
+</body>
+</html>
