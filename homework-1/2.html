@@ -16,26 +16,28 @@
 
       c = prompt('c', 0);
       cInt = parseInt(c);
-
-      document.write('Ввели a = ' + a + ', b = ' + b + ', c = ' + c + '.');
-      document.write('<br/>');
-      document.write('Сумма чисел: ' + (aInt + bInt + cInt));
-      document.write('<br/>');
-
-      if (a % 2 == 0) {
-        document.write('Четное "a" = ' + aInt);
-        document.write('<br/>');
-      }
-
-      if (b % 2 == 0) {
-        document.write('Четное "b" = ' + bInt);
-        document.write('<br/>');
-      }
-
-      if (c % 2 == 0) {
-        document.write('Четное "c" = ' + cInt);
-      }
-        
     </script>
+    
+    <p>
+      Ввели a = '<script>document.write(a);</script>', b = '<script>document.write(b);</script>', c = '<script>document.write(c);</script>'.'<br>
+      Сумма чисел: <script>document.write(aInt + bInt + cInt);</script><br><br>
+      <script>
+        if (a % 2 == 0) {
+          document.write('Четное "a" = ' + aInt);
+        }
+      </script>
+      <br>
+      <script>
+        if (b % 2 == 0) {
+          document.write('Четное "b" = ' + bInt);
+        }
+      </script>
+      <br>
+      <script>
+        if (c % 2 == 0) {
+          document.write('Четное "c" = ' + cInt);
+        }
+      </script>
+    </p>
 </body>
 </html>
