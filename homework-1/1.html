@@ -12,25 +12,18 @@
       height = prompt('Высота', 0);
     
       // формулы расчета
-      // baseArea = Math.PI * (radius * 2);
-      // capacity = Math.PI * (radius * 2) * height;
-        
-      document.write('**************');
-      document.write('<br/>');
-      document.write('<br/>');
-      document.write('Обьем цилиндра с площадью основы *' + (Math.PI * (radius * 2)) + '*, радиусом *' + radius + '* и высотой *' + height + '* равен:');
-      document.write('<br/>');
-      document.write('<br/>');
-      document.write('-------------------');
-      document.write('<br/>');
-      document.write('<br/>');
-      document.write('V = ' + (Math.PI * (radius * 2) * height) + '.');
-      document.write('<br/>');
-      document.write('<br/>');
-      document.write('------------------');
-      document.write('<br/>');
-      document.write('<br/>');
-      document.write('end.');
+      baseArea = Math.PI * (radius * 2);  // площадь основы 
+      capacity = baseArea * height;       // объем цилиндра
     </script>
+
+    <p>
+      **************<br><br>
+      Обьем цилиндра с площадью основы *<script>document.write(baseArea);</script>*, радиусом *<script>document.write(radius);</script>* и высотой *<script>document.write(height);</script>* равен:<br><br>
+      -------------------<br><br>
+      V = <script>document.write(capacity);</script>.<br><br>
+      ------------------<br><br>
+      end.
+    </p>
+    
 </body>
 </html>
