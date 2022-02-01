@@ -11,12 +11,10 @@ for (let i = a; i <= b; i++) {
       }
 }
 
-
 // 2. Заставить пользователя ввести с клавиатуры число (не строку и не NaN).
 do {
     let a = prompt('Enter number');
 } while (isNaN(a));
-
 
 // 3. Проверить число на простоту. Число вводить с клавиатуры.
 let num = prompt('Enter number');
@@ -32,7 +30,6 @@ for (let i = 2; i < num; i++) {
 if (isSimple) {
     console.log('Simple number: ', num);
 }
-
 
 // 4. Посчитать сумму простых чисел от 0 до 250.
 let sum = 0;
