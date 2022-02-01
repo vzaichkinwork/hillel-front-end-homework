@@ -27,22 +27,24 @@
 
 
 // 4. Посчитать сумму простых чисел от 0 до 250.
-let sum = 0;
-let min = 0;
-let max = 250;
+// DONE!!!!!!!!!!!
+// let sum = 0;
+// let min = 0;
+// let max = 250;
 
-for (let i = min; i < max; i++) {
-  let isSimple = true;
+// for (let i = min; i < max; i++) {
+//   let isSimple = true;
   
-  for (let j = min; j < i; j++) {
-    if (i % j == 0) {
-        isSimple = false;
-    }
-  }
+//   for (let j = 2; j < i; j++) {
+//     if (i % j == 0) {
+//         isSimple = false;
+//         break;
+//     }
+//   }
   
-  if (isSimple) {
-    sum += i;
-  }
-}
+//   if (isSimple) {
+//     sum += i;
+//   }
+// }
 
-console.log(sum);
+// console.log(sum);
