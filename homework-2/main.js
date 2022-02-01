@@ -1,19 +1,20 @@
 // 1. Ввести с клавиатуры 2 числа `a` и `b` (где `a <<< b`. Символ "<<<" - означает "сильно меньше" ). Запустить цикл перебора от `a` до `b`. Вывести в консоль квадраты чётных чисел.
-a = parseInt(prompt('Enter a'));
+let a = parseInt(prompt('Enter a'));
 
 do {
-    b = parseInt(prompt('Enter b'));
+    let b = parseInt(prompt('Enter b'));
 } while ((a + 10) > b);
 
 for (let i = a; i <= b; i++) {
     if (i % 2 == 0) {
-        console.log(i * 2);
+        console.log(i * 2); // console.log(Math.pow(i, 2));
       }
 }
 
+
 // 2. Заставить пользователя ввести с клавиатуры число (не строку и не NaN).
 do {
-    a = prompt('Enter number');
+    let a = prompt('Enter number');
 } while (isNaN(a));
 
 
