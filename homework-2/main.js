@@ -1,9 +1,11 @@
 // 1. Ввести с клавиатуры 2 числа `a` и `b` (где `a <<< b`. Символ "<<<" - означает "сильно меньше" ). Запустить цикл перебора от `a` до `b`. Вывести в консоль квадраты чётных чисел.
 let a = parseInt(prompt('Enter a'));
+let b;
+let increment = 10;
 
 do {
-    let b = parseInt(prompt('Enter b'));
-} while ((a + 10) > b);
+    b = parseInt(prompt('Enter b'));
+} while ((a + increment) > b);
 
 for (let i = a; i <= b; i++) {
     if (i % 2 == 0) {
@@ -12,8 +14,10 @@ for (let i = a; i <= b; i++) {
 }
 
 // 2. Заставить пользователя ввести с клавиатуры число (не строку и не NaN).
+let a;
+
 do {
-    let a = prompt('Enter number');
+    a = prompt('Enter number');
 } while (isNaN(a));
 
 // 3. Проверить число на простоту. Число вводить с клавиатуры.
