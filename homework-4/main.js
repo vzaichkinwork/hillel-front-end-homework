@@ -32,22 +32,16 @@ document.write('<br />----------------<br />');
 
 // удалили нужные столбцы
 for (row = 0; row < A.length; row++) {
-    for (col = 0; col < A[row].length; col++) {
+    for (col = A[row].length - 1; col >= 0; --col) { 
         if (sum[col] < 0) {
-            document.write(row + '.' + [col] + '&nbsp;&nbsp;&nbsp;');
             A[row].splice(col, 1);
-            // A[row][col] = '*';
-            console.log(col, ' col');
         }
     }
-    document.write('<br />');
 }
-document.write('<br />');
 
 // вывели итоговый массив
 for (row = 0; row < A.length; row++) {
-    let aL = A[row].length;
-    for (col = 0; col < aL; col++) {
+    for (col = 0; col < A[row].length; col++) {
         document.write(A[row][col] + '&nbsp;&nbsp;&nbsp;');
     }
     document.write('<br />');
