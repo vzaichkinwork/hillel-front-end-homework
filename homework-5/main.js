@@ -4,7 +4,7 @@
 const arr1 = [1, 1, '10string', 1, 1, '100', '40', 100.99];
 const arr2 = [2, 2, 2, '1string', 20, '200'];
 
-function findArrayBiggestSumm(arr1, arr2) {
+function findBiggestNumberSummArray(arr1, arr2) {
     let arr1Sum = 0;
     let arr2Sum = 0;
     for (let i = 0; i < arr1.length; i++) {
@@ -25,5 +25,5 @@ function findArrayBiggestSumm(arr1, arr2) {
     return arr1Sum > arr2Sum ? arr1 : arr2;
 }
 
-console.log(findArrayBiggestSumm(arr1, arr2));
+console.log(findBiggestNumberSummArray(arr1, arr2));
 
