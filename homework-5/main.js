@@ -19,8 +19,8 @@ function findArrayBiggestSumm(arr1, arr2) {
         }
     }
 
-    console.log(arr1Sum, ' sum 1');
-    console.log(arr2Sum, ' sum 2');
+    console.log('sum1 = ', arr1Sum);
+    console.log('sum2 = ', arr2Sum);
 
     return arr1Sum > arr2Sum ? arr1 : arr2;
 }
