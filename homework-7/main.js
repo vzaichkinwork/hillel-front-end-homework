@@ -13,12 +13,30 @@ function compressList(array) {
 
     for (let i = 0; i < array.length; i++) {
         let start = 0; 
-        if (array[i] === 0) {
+        if (array[i]) {
+            
+        } else {
             countZeros++;
             array.splice(start, countZeros + 1, countZeros);
-            console.log(array);
-        } 
+        }
     }
+
+    // for (let i = 0; i < array.length; i++) {
+    //     let start = 0; 
+    //     if (array[i] === 0) {
+    //         countZeros++;
+    //         array.splice(start, countZeros + 1, countZeros);
+    //     } 
+    // }
+
+    // for (var len = array.length, i = len; --i >= 0;) {
+    //     if (array[array[i]]) {
+    //         array[array[i]] += 1;
+    //         array.splice(i, 1);
+    //     } else {
+    //         array[array[i]] = 1;
+    //     }
+    //   }
 
     return array;
 }
