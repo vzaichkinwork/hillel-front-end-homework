@@ -9,13 +9,13 @@ let list = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1];
 
 function compressList(arr) {
     let result = new Array();
-    let current = -1;
+    let current = 0;
     let count = 0;
 
     for (let i = 0; i <= arr.length; i++) {
-        count++;
+        
         if (arr[i] === current) {
-            console.log('i:', i, ' ', arr[i], '=', current);
+            count++;
         } else {
             result.push(count);
             if (current == 0) {
@@ -23,9 +23,7 @@ function compressList(arr) {
             } else {
                 current = 0;
             }
-            count = 0;
-
-            console.log('i:', i, ' ', arr[i], '=', current);
+            count = 1;
         }
     }
 
