@@ -7,40 +7,33 @@
 
 let list = [0,0,0,0,1,1,1,1,1,1,1,0,0,1,1,1,1,0,1];
 
-function compressList(array) {
-    let countZeros = 0; 
-    let countOnes = 0; 
+function compressList(arr) {
+    let result = new Array();
+    let current = -1;
+    let count = 0;
 
-    for (let i = 0; i < array.length; i++) {
-        let start = 0; 
-        if (array[i]) {
-            
+    for (let i = 0; i <= arr.length; i++) {
+        count++;
+        if (arr[i] === current) {
+            console.log('i:', i, ' ', arr[i], '=', current);
         } else {
-            countZeros++;
-            array.splice(start, countZeros + 1, countZeros);
+            result.push(count);
+            if (current == 0) {
+                current = 1;
+            } else {
+                current = 0;
+            }
+            count = 0;
+
+            console.log('i:', i, ' ', arr[i], '=', current);
         }
     }
 
-    // for (let i = 0; i < array.length; i++) {
-    //     let start = 0; 
-    //     if (array[i] === 0) {
-    //         countZeros++;
-    //         array.splice(start, countZeros + 1, countZeros);
-    //     } 
-    // }
-
-    // for (var len = array.length, i = len; --i >= 0;) {
-    //     if (array[array[i]]) {
-    //         array[array[i]] += 1;
-    //         array.splice(i, 1);
-    //     } else {
-    //         array[array[i]] = 1;
-    //     }
-    //   }
-
-    return array;
+    return result;
 }
 
-let compressedList = compressList(list);
+var compressedList = compressList(list);
+
 console.log(compressedList);
+
 
