@@ -10,7 +10,6 @@ function getMaxs() {
         if (typeof arguments[i] == "object") {
             let maxEl = 0;
             arguments[i].forEach(element => {
-                console.log(element);
                 if (element > maxEl) {
                     maxEl = element;
                 }
